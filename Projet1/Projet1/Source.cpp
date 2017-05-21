@@ -27,9 +27,10 @@ void genome(double qte_m, double qte_m_exp, double qte_atcg, double qte_atcg_exp
 		res.insert(r);
 		cout <<r<< ';';
 	}
-	cout << endl;
+	cout << "\r\n";
 }
 void dico(set<string> maladies, double qte_m, double qte_m_exp, double qte_atcg, double qte_atcg_exp) {
+		cout << "MA v1.0\r\n";
 	for (auto n = maladies.begin(); n!= maladies.end(); n++) {
 		cout << *n << ";";
 		genome(qte_m, qte_m_exp, qte_atcg, qte_atcg_exp);
@@ -39,14 +40,14 @@ void dico(set<string> maladies, double qte_m, double qte_m_exp, double qte_atcg,
 
 int main() {
 	set<string> test = { "Agoraphobie", "Anorexie", "Anorexie mentale", "Anxiete de separation", "Autisme atypique", "Automutilation", "Autophagie", "cognitif", "Depression clinique", "Depression perinatale", "Depression saisonniere", "Dyscalculie", "Dysmorphophobie", "Dyslexie", "Echolalie", "Echopraxie", "Ejaculation precoce", "Encopresie", "Episode hypomaniaque", "Exhibitionnisme", "Maladie d'Alzheimer", "Maladie de Gilles de la Tourette", "Manie", "Megalomanie", "Melancolie", "Paraphilie", "Parasomnie", "Pedophilie", "Perfectionnisme", "Peur panique", "Phobie sociale", "Pica", "Psychose infantile", "Pyromanie", "Schizophrenie", "Schizophrenie catatonique", "Sinistrose", "Somnambulisme", "Syndrome d'alcoolisation foetale", "Syndrome d'Angelman", "Syndrome d'Asperger", "Syndrome de Down", "Syndrome d'Ekbom", "Syndrome de Fregoli", "Syndrome de Ganser", "Syndrome de Joubert", "Syndrome de Munchhausen", "Syndrome de Munchhausen par procuration", "Syndrome general d'adaptation", "Syndrome de Peter Pan", "Syndrome de Williams", "Terreur nocturne", "Tic", "Trichotillomanie", "Trouble amnesique", "Trouble anxieux", "Trouble autistique", "Trouble bipolaire", "Trouble catatonique", "Trouble cognitif", "Trouble d'apprentissage", "Trouble de l'adaptation", "Trouble de la personnalite", "Trouble de la personnalite anankastique", "Trouble de la personnalite antisociale", "Trouble de la personnalite borderline", "Trouble de la personnalite dependante", "Trouble de la personnalite evitante", "Trouble de la personnalite histrionique", "Trouble de la personnalite narcissique", "Trouble de la personnalite paranoiaque", "Trouble de la personnalite schizotypique", "Trouble des habitudes et des impulsions", "Trouble du deficit de l'attention", "Trouble du spectre de l'alcoolisation foetale", "Trouble de stress post-traumatique", "Trouble emotionnel", "Trouble erectile masculin", "Trouble psychotique bref", "Trouble psychotique partage", "hallucinogenes", "alcool", "cocaine", "cafeine", "cannabis", "amphetamines", "Trouble obsessionnel compulsif", "Trouble schizo-affectif" };
-	cout << "----------------------------- DICO --------------------------" << endl;
+	cout << "----------------------------- DICO --------------------------\r\n";
 	dico(test, 8, 5, 100, 1000);
-	cout << "----------------------------- DICO --------------------------" << endl;
-	cout << "----------------------------- GENOMES --------------------------" << endl;
+	cout << "----------------------------- DICO --------------------------\r\n";
+	cout << "----------------------------- GENOMES --------------------------\r\n";
 	for (int i = 1; i <= 10; i++) {
-		cout << "GENOME " << to_string(i) << " :" <<endl;
+		cout << "GENOME " << to_string(i) << " :\r\n";
 		genome(1300, 300, 100, 1000);
 	}
-	cout << "----------------------------- GENOMES --------------------------" << endl;
+	cout << "----------------------------- GENOMES --------------------------\r\n";
 	return 0;
 }
